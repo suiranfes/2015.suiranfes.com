@@ -1,0 +1,959 @@
+@charset "Shift_JIS";
+
+/*--------------------------------------------------------
+  共通レイアウトパーツ設定
+--------------------------------------------------------*/
+
+body{
+	background-image : url(bg_1F1b.png);
+    background-position: top left;
+    background-repeat: repeat;
+	background-color: #fff;
+}
+#hpb-container{
+	margin-top: -1px;
+}
+
+#hpb-inner::after{
+	content: ".";  
+	display: block;  
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+/* ヘッダー内パーツ */
+
+
+#hpb-header::after{
+	content: ".";  
+	display: block;  
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+#hpb-headerMain h1{
+	width: 960px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 4px 0 5px 12px;
+	color: #fff;
+    text-align: left;
+    font-weight: normal;
+    line-height: 18px;
+    font-size: 12px;
+
+}
+#hpb-headerLogo{
+    width: 470px;
+	float: left;
+    margin-top: 7px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#hpb-headerLogo a{
+    display: block;
+    margin-top: 0px;
+    margin-right: 0;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    height: 54px;
+    background-image : url(logo_1F1b1.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+#hpb-headerExtra1{
+    width: 470px;
+	float: right;
+    margin-top: 0px;
+    margin-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing: 0.1em;
+	padding-right: 20px;
+	padding-top: 6px;
+}
+#hpb-headerExtra1 p.tel{
+    /* 電話番号の文字設定 */
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 6px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    text-align: right;
+	font-size: 1.4em;
+	color: #3894ce;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+#hpb-headerExtra1 p.tel span{
+    /* 電話番号の「TEL」文字設定 */
+	display: inline-block;
+	width: 34px;
+	height: 28px;
+	overflow: hidden;
+	text-indent: -9999px;
+	text-align: left;
+	margin-right: 10px;
+    background-image : url(headerTel_1F1b.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+	vertical-align: middle;
+}
+
+#hpb-headerExtra1 p.address{
+    /* 住所文字設定 */
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    line-height: 1.2;
+    text-align: right;
+}
+
+
+/* フッター内パーツ */
+
+#hpb-footer{
+	background-color: #3894ce;
+}
+
+#hpb-footerMain{
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+#hpb-footerMain p{
+    /* コピーライト文字設定 */
+    text-align: center;
+	margin: 0;
+	color: #fff;
+}
+
+#hpb-footerExtra1{
+    padding-top: 13px;
+    padding-bottom: 23px;
+    width: 100%;
+}
+
+#hpb-footerExtra1 ul{
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+    text-align: right;
+    width: 960px;
+}
+
+#hpb-footerExtra1 li{
+    /* フッターナビ設定 */
+    display: inline;
+    background-image : url(point_1F1b_02.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 21px;
+    padding-right: 15px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+    font-weight: normal;
+}
+
+#hpb-footerExtra1 a:link{
+    text-decoration: underline;
+	color: #fff;
+}
+#hpb-footerExtra1 a:visited{
+    text-decoration: underline;
+	color: #fff;
+}
+#hpb-footerExtra1 a:hover{
+    text-decoration: underline;
+}
+#hpb-footerExtra1 a:active{
+    text-decoration: underline;
+}
+
+/*--------------------------------------------------------
+  ナビゲーションデザイン設定
+--------------------------------------------------------*/
+
+#hpb-nav li a{
+    /* ナビゲーション文字設定 */
+    font-weight: normal;
+}
+
+#hpb-nav li a:link{
+    color: #000;
+    text-decoration: none;
+}
+/* ナビゲーション文字色設定 */
+#hpb-nav li a:visited{
+    color: #000;
+    text-decoration: none;
+}
+#hpb-nav li a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+#hpb-nav li a:active{
+    color: #fff;
+    text-decoration: none;
+}
+
+#hpb-nav li span.en{
+    display: none;
+}
+/*--------------------------------------------------------
+  基本パーツデザイン設定
+--------------------------------------------------------*/
+
+/* リンク文字色 */
+a:link{
+    color: #000;
+    text-decoration: underline;
+}
+a:visited{
+    color: #000;
+    text-decoration: underline;
+}
+a:hover{
+    color: #666;
+    text-decoration: none;
+}
+a:active{
+    color: #666;
+    text-decoration: none;
+}
+
+#hpb-skip{
+    /* ヘッダースキップの非表示 */
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+p{
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    padding-right: 20px;
+    padding-left: 0.1em;
+    line-height: 1.4;
+    text-align: left;
+}
+
+p.large{
+    font-weight: bold;
+	color: #0e7bbf;
+	font-size: 1.2em;
+}
+p.indent{
+    padding-left: 25px;
+}
+
+.left{
+    float: left;
+}
+
+img.left{
+    margin-left: 14px;
+}
+
+.right{
+    float: right;
+}
+
+img.right{
+    margin-right: 24px;
+}
+
+hr{
+    width: 100%;
+    height: 1px;
+    margin-top: 10px;
+    margin-right: 24px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    clear: both;
+    border-top-width: 1px;
+    border-top-style: none;
+    border-right-width: 1px;
+    border-right-style: none;
+    border-left-width: 1px;
+    border-left-style: none;
+    color: #ffffff;
+    border-bottom-width: 1px;
+    border-bottom-style: none;
+}
+
+.hpb-layoutset-02 h2{
+    padding-left: 33px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+    text-align: left;
+	line-height: 78px;
+    color: #fff;
+    font-weight: normal;
+	font-size: 1.6em;
+	letter-spacing: 0.1em;
+}
+
+h2 span.en{
+    display: none;
+}
+
+#hpb-wrapper h3{
+	color: #0e7bbf;
+	font-size: 1.6em;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	background-image : url(indexBg_1F1b.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	padding: 10px 10px 0px 10px;
+}
+
+h3.hpb-c-index{
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: none;
+}
+
+h4{
+    margin-top: 0;
+    margin-right: 24px;
+    margin-bottom: 1em;
+    margin-left: 0;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 1.2;
+    color: #0e7bbf;
+    font-weight: bold;
+}
+
+h5{
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 14px;
+	margin-right: 14px;
+    padding-top: 0;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 1.2;
+	border-bottom-width: 2px;
+    border-bottom-style: dotted;
+    border-bottom-color: #3894ce;
+}
+
+table{
+    margin-top: 5px;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    border-collapse: collapse;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #cccccc;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #cccccc;
+	width: 90%;
+}
+
+table th{
+    padding-top: 8px;
+    padding-right: 15px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    text-align: left;
+    background-color: #e9eef7;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #cccccc;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+}
+
+table td{
+    padding-top: 8px;
+    padding-right: 15px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    text-align: left;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #cccccc;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+}
+
+/* フォームパーツ設定 */
+input.button{
+    margin-top: 15px;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-left: auto;
+	padding: 10px;
+}
+
+textarea{
+    width: 400px;
+    height: 200px;
+}
+
+input.l{
+    width: 400px;
+}
+input.m{
+    width: 250px;
+}
+input.s{
+    width: 150px;
+}
+#contact form{
+	text-align:center;
+}
+#contact form h3{
+	text-align: left;
+}
+#contact form table{
+	margin-left:auto;
+}
+/* メインコンテンツ内基本パーツ */
+
+#hpb-main p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#hpb-main ul{
+    margin-top: 0;
+    margin-right: 10px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#hpb-main ul li{
+    text-align: left;
+    line-height: 1.6;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    background-image : url(point_1F1b.png);
+    background-position: 5px 11px;
+    background-repeat: no-repeat;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #bdcfdc;
+}
+
+#hpb-main dl{
+    margin-top: 0;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+#hpb-main dt{
+    float: left;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    text-align: left;
+    line-height: 16px;
+    min-height: 16px;
+    font-weight: normal;
+    width: 140px !important;
+    padding-top: 10px;
+    padding-right: 0;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    background-image : url(point_1F1b.png);
+    background-position: 5px 11px;
+    background-repeat: no-repeat;
+}
+
+#hpb-main dd{
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    line-height: 16px;
+    min-height: 16px;
+    padding-left: 165px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #bdcfdc;
+}
+
+
+#hpb-main dl::after{
+    content: ".";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+
+#hpb-main img.left{
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+#hpb-main img.right{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    float: right;
+}
+
+#pagetop{
+    position: absolute;
+	bottom: 0;
+	right: 20px;
+    width: 100%;
+    text-align: right;
+}
+
+#pagetop a{
+    /* ページの先頭へのリンク設定 */
+    background-color: #3894ce;
+	display: inline-block;
+	padding: 10px 20px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+#pagetop a:link,
+#pagetop a:visited{
+	color: #fff;
+	text-decoration: none;
+}
+
+/* サイドブロック内パーツ */
+
+#banner ul{
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#banner li{
+    padding-bottom: 4px;
+}
+
+#banner li a{
+    display: block;
+    width: 214px;
+    height: 77px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+#banner a#banner-service{
+    /* 製品一覧バナー */
+    background-image : url(banner_1F1b_01.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+#banner a#banner-recruit{
+    /* 採用情報バナー */
+    background-image : url(banner_1F1b_02.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+#banner a#banner-access{
+    /* アクセスバナー */
+    background-image : url(banner_1F1b_03.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+#hpb-inner #companyinfo{
+	background-image : url(sideBg_1F1b.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #e9eef7;
+	margin-bottom: 10px;
+	border: 1px solid #bdcfdc;
+	border-radius: 4px;
+	width: 209px;
+}
+
+#hpb-inner #companyinfo h3{
+    color: #000;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+	margin: 0;
+    font-size: 1em;
+	text-align: center;
+}
+
+#hpb-inner #companyinfo p{
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* トップページ デザイン定義 */
+
+#toppage p.large{
+	letter-spacing: 0.2em;
+}
+
+#toppage h3{
+	padding: 13px 10px 5px 20px;
+	margin: 0;
+	background-image: none;
+}
+
+#toppage h3 span.ja{
+    display: none;
+}
+#toppage-topics,
+#toppage-news{
+	border: 1px solid #bdcfdc;
+	border-radius: 4px;
+	margin: 0 0 25px 0;
+	background-image : url(topicsBg_1F1b.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+#toppage-topics h3{
+	
+}
+#hpb-main #toppage-topics hr{
+	margin-bottom: 0px;
+	padding-bottom: 0;
+}
+#hpb-main #toppage-topics ul{
+	margin-bottom: 8px;
+}
+#hpb-main #toppage-topics li{
+	
+}
+#hpb-main #toppage-topics li:last-child{
+	border: none;
+}
+
+#hpb-main #toppage-news dl{
+	margin-bottom: 12px;
+}
+#hpb-main #toppage-news dt{
+	width: 100px !important;
+}
+#hpb-main #toppage-news dd{
+	padding-left: 120px;
+}
+
+#hpb-main #toppage-news dd:last-child{
+	border: none;
+}
+
+
+/* アクセスページ デザイン定義 */
+
+#access h3 + img{
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+/* =======================================================
+  レスポンシブル設定
+======================================================= */
+@media screen and (max-width: 568px) {
+
+	/*--------------------------------------------------------
+	  共通レイアウトパーツ設定
+	--------------------------------------------------------*/
+	#hpb-container{
+		width: 100%;
+		margin-top: 0;
+		background-image: none;
+		background-color: #fff;
+	}
+
+	/* ヘッダー内パーツ */
+	#hpb-header{
+		width: 100%;
+		padding-bottom: 10px;
+		height: auto;
+	}
+	#hpb-headerLogo{
+		width: 98%;
+		float: none;
+		padding-left: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#hpb-headerMain{
+		width: 100%;
+	}
+	#hpb-headerMain h1{
+		margin-left: 0;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		line-height: 1.4;
+		text-align: left;
+		width: auto;
+		background-color: #3894ce;
+	}
+	#hpb-headerLogo a{
+		display: block;
+		max-width: 100%;
+		height: 54px;
+		background-size: contain;
+		background-position: top center;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#hpb-headerExtra1{
+		width: 98%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0px;
+		float: none;
+		padding: 0;
+	}
+
+	#pagetop{
+		text-align: center;
+		left: 0;
+	}
+	/* フッター内パーツ */
+	#hpb-footerMain{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#hpb-footerMain p{
+		/* コピーライト文字設定 */
+		padding-left: 5px;
+		padding-right: 5px;
+		word-break: break-all;
+	}
+	#hpb-footerExtra1{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	#hpb-footerExtra1 ul{
+		text-align: center;
+		width: 100%;
+	}
+	#hpb-footerExtra1 li{
+		/* フッターナビ設定 */
+		display: inline-block;
+		margin-left: 10px;
+		margin-right: 10px;
+		padding-right: 0;
+	}
+
+	/*--------------------------------------------------------
+	  ナビゲーションデザイン設定
+	--------------------------------------------------------*/
+	#hpb-nav h3.hpb-c-index{
+		width: 27px;
+		height: 20px;
+		background-image : url(btn_menu.png);
+		background-position: top left;
+		background-repeat: no-repeat;
+		margin-left: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		overflow: hidden;
+		text-indent: -9999px;
+		cursor: pointer;
+	}
+
+	/*--------------------------------------------------------
+	  基本パーツデザイン設定
+	--------------------------------------------------------*/
+	p{
+		padding-right: 0;
+		padding-left: 0;
+	}
+	img.left{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	img.right{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.hpb-layoutset-02 h2{
+		width: 96%;
+		padding-left: 0;
+		padding-top: 25px;
+		line-height: 1.4;
+		margin-top: 4px;
+		margin-right: auto;
+		margin-left: auto;
+		word-break: break-all;
+	}
+	table{
+		width: 96%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	/* フォームパーツ設定 */
+	textarea{
+		width: 96%;
+	}
+
+	input.l{
+		width: 96%;
+	}
+	input.m{
+		width: 60%;
+	}
+	input.s{
+		width: 30%;
+	}
+
+	/* メインコンテンツ内基本パーツ */
+	#hpb-main h3{
+		background-size: contain;
+	}
+	#hpb-main ul li{
+		padding-right: 0;
+	}
+	#hpb-main dt{
+		float: none;
+		line-height: 1.4;
+		padding-bottom: 0;
+	}
+	#hpb-main dd{
+		line-height: 1.4;
+		padding-left: 20px;
+		padding-right: 0;
+	}
+	#hpb-main img.left{
+		margin-left: 10px;
+		margin-right: 10px;
+		float: none;
+	}
+	#hpb-main img.right{
+		margin-left: 10px;
+		margin-right: 10px;
+		float: none;
+	}
+
+	/* サイドブロック内パーツ */
+	#banner li a{
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#banner a#banner-service,
+	#banner a#banner-recruit,
+	#banner a#banner-access{
+		background-position: top center;
+		background-size: contain;
+	}
+	#hpb-inner #companyinfo{
+		margin-bottom: 0;
+		margin-left: auto;
+		margin-right:auto;
+		width: 96%;
+	}
+
+	/* トップページ デザイン定義 */
+	#toppage p.large{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#hpb-main #toppage-news dd{
+		padding-left: 20px;
+		border: none;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: #bdcfdc;
+	}
+	#hpb-main #toppage-news dt:first-child + dd{
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: #bdcfdc;
+	}
+	#hpb-main #toppage-news dd:last-child{
+		border: none;
+	}
+
+	/* アクセスページ デザイン定義 */
+	#access h3 + img{
+		margin-left: 10px;
+		margin-right: 10px;
+		max-width: 96%;
+		height: auto;
+	}
+
+
+
+}

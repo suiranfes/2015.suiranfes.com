@@ -1,0 +1,310 @@
+@charset "Shift_JIS";
+
+/* 要素リセット */
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 75%;
+    font-family: 'メイリオ' ,Meiryo, 'ヒラギノ角ゴ Pro W3' , 'Hiragino Kaku Gothic Pro' , 'ＭＳ Ｐゴシック' , 'Osaka' ,sans-serif;
+    color: #000000; /* 標準文字色 */
+    min-width: 960px;
+}
+/* Safari用ハック 文字サイズ調整 */
+/*\*/
+html:first-child body{
+    font-size: 70%;
+}
+/* end */
+
+img{
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+/*--------------------------------------------------------
+  レイアウト設定
+--------------------------------------------------------*/
+#hpb-container{
+	background-image : url(headerBg_1F1b_02.png);
+	background-repeat: repeat-x;
+	background-position: top left;
+}
+
+#hpb-header{
+	height: 153px;
+	overflow: hidden;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#hpb-inner{
+	position: relative;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image : url(wallppr006.gif);
+	background-repeat: repeat-y;
+	background-position: top left;
+	background-color: #fff;
+	margin-top: -1px;
+}
+
+#hpb-wrapper{
+	width: 730px;
+	float: left;
+	margin-top: -1px;
+}
+
+#hpb-main{
+    width: 694px;
+    float: left;
+    text-align: left;
+    padding-bottom: 30px;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.hpb-layoutset-01 #hpb-main{
+    padding-top: 20px;
+}
+.hpb-layoutset-02 #hpb-main{
+    padding-top: 10px;
+}
+
+#hpb-aside{
+    width: 214px;
+	float: right;
+    text-align: left;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-right: 6px;
+}
+
+#hpb-footer{
+    clear: both;
+}
+
+
+/*--------------------------------------------------------
+  デザイン設定
+--------------------------------------------------------*/
+/* タイトル */
+
+.hpb-layoutset-01 #hpb-title{
+    width: 730px;
+    height: 309px;
+    text-indent: -9999px;
+    overflow: hidden;
+	background-image : url(mainimg_1F1b.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.hpb-layoutset-02 #hpb-title{
+    width: 730px;
+    height: 111px;
+	background-image : url(titleBg_1F1b.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+/* ナビゲーション */
+
+#hpb-nav{
+	width: 100%;
+	position: absolute;
+	top: -56px;
+	left: 0;
+}
+
+#hpb-nav ul{
+    margin-top: -1px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0px;
+    padding-bottom: 0;
+    list-style-type: none;
+    text-align: left;
+	width: 960px;
+	height: 51px;
+	overflow: hidden;
+	letter-spacing: -0.4em;
+	}
+
+
+#hpb-nav li{
+    display: inline-block;
+    font-size: 12px;
+	letter-spacing: 0.1em;
+	background-image : url(mainmenu_1F1b_02.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	border-right: 1px solid #bdcfdc;
+}
+#hpb-nav li:first-child{
+	border-left: 1px solid #bdcfdc;
+}
+
+
+#hpb-nav li a{
+    display: block;
+    padding-left: 25px;
+    padding-right: 25px;
+	height: 51px;
+	overflow: hidden;
+	line-height: 51px;
+	font-size: 1.1em;
+	
+}
+#hpb-nav li a:hover{
+	background-color: #3894ce;
+	background-image : url(mainmenu_1F1b_02.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+
+
+/*トップページ*/
+
+#toppage p.large{
+
+}
+
+/* =======================================================
+  レスポンシブル設定
+======================================================= */
+@media screen and (max-width: 568px) {
+
+	body{
+		min-width: 100%;
+	}
+
+	/*--------------------------------------------------------
+	  レイアウト設定
+	--------------------------------------------------------*/
+	#hpb-inner{
+		background-image: none;
+		width: 100%;
+	}
+	#hpb-wrapper{
+		width: 100%;
+	}
+	#hpb-main{
+		width: 96%;
+		float: none;
+		padding: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hpb-layoutset-01 #hpb-main{
+		padding-top: 0;
+		margin-top: -10px;
+	}
+	.hpb-layoutset-02 #hpb-main{
+		padding-top: 0;
+	}
+	#hpb-aside{
+		width: 96%;
+		float: none;
+		padding-left: 0;
+		padding-bottom: 50px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hpb-layoutset-01 #hpb-aside{
+		padding-top: 0;
+	}
+	.hpb-layoutset-02 #hpb-aside{
+		padding-top: 0;
+	}
+	#hpb-nav{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		position: relative;
+		top: 0;
+		left: 0;
+		background-color: #3894ce;
+	}
+	#hpb-nav ul{
+		width: 100%;
+	}
+	#hpb-nav li{
+		border-bottom: 1px solid #bdcfdc;
+		text-align: center;
+	}
+
+	/*--------------------------------------------------------
+	  デザイン設定
+	--------------------------------------------------------*/
+	/* タイトル */
+	.hpb-layoutset-01 #hpb-title{
+		width: 100%;
+		height: 170px;
+		overflow: hidden;
+		background-size: contain;
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.hpb-layoutset-02 #hpb-title{
+		width: 100%;
+		background-size: contain;
+		background-position: top right;
+		position: relative;
+		top: 0;
+		left: 0;
+		height: auto;
+		background-color: #3894ce;
+
+	}
+	.hpb-layoutset-02 #hpb-title h2{
+		line-height: normal;
+		padding: 14px 0px 0px 10px;
+		font-size: 1.3em;
+	}
+
+	/* ナビゲーション */
+	#hpb-nav ul{
+		display: none;
+		height: auto;
+		background-color: #fff;
+		margin: 0;
+	}
+	#hpb-nav ul.toggled-on{
+		display: block;
+		padding-left: 0;
+	}
+	#hpb-nav li{
+		display: block;
+		background-image: none;
+	}
+	#hpb-nav li a{
+		display: block;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		height: auto;
+		line-height: 1.4;
+	}
+	#hpb-nav li a:hover{
+		background-image: none;
+	}
+
+	/*トップページ*/
+	#toppage p.large{
+		margin-bottom: 10px;
+	}
+
+
+
+}
